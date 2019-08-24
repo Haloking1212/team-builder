@@ -16,27 +16,27 @@ In this project you'll build an app that will keep track of memebers of a team. 
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Use `npx create-react-app team-builder` or `create-react-app team-builder` to initiate the project.
-- [ ] CD into your `team-builder` directory
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [*] Create a forked copy of this project.
+- [*] Add your team lead as collaborator on Github.
+- [*] Clone your OWN version of the repository in your terminal
+- [*] Use `npx create-react-app team-builder` or `create-react-app team-builder` to initiate the project.
+- [*] CD into your `team-builder` directory
+- [*] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [*] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [*] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [*] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [*] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [*] Add your team lead as a reviewer on the pull-request
+- [*] Your team lead will count the project as complete by merging the branch back into master.
+- [*] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Render a list of team members from state
-- [ ] Build a form to add a new member to the list of members
+- [*] Render a list of team members from state
+- [*] Build a form to add a new member to the list of members
 
 ### STEP 1 - Setup your state
 
