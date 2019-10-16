@@ -3,6 +3,7 @@ import './App.css';
 import Form from './Components/Form';
 import data from './data';
 import FormInfo from './Components/FormInfo';
+import delData from "./delData";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       const addNewMem = form => {
         setTeamList([...teamList, form]);
       };
-      const [...deleteTeam, setDeleteTeam] = useState("")
+      const [deleteTeam, setDeleteTeam] = useState(delData)
       const deleteNewMem = del => {
         setDeleteTeam([...deleteTeam, del]);
       };
