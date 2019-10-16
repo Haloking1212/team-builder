@@ -10,10 +10,14 @@ function App() {
       const addNewMem = form => {
         setTeamList([...teamList, form]);
       };
+      const [...deleteTeam, setDeleteTeam] = useState("")
+      const deleteNewMem = del => {
+        setDeleteTeam([...deleteTeam, del]);
+      };
   return (
     <div className="App">
       <h1>Add New Member Form</h1>
-      <Form addNewMem={addNewMem}/>
+      <Form addNewMem={addNewMem} deleteNewMem={deleteNewMem}/>
       <FormInfo formsList={teamList}/>
     </div>
   );
