@@ -4,7 +4,7 @@ const MemberForm = props => {
     //add new member state
     const [form, setForm] = useState({ name: "", email: "", role: "" });
     //delete member code
-    const [delForm, setDelForm] = useState({ name: null, email: null, role: null })
+    // const [delForm, setDelForm] = useState({ name: null, email: null, role: null })
 
     //add new member handler
     const changeHandler = event => {
@@ -13,10 +13,10 @@ const MemberForm = props => {
     };
 
     //delete new member handler
-    const delChangeHandler = event => {
-        console.log(event.target.value);
-        setDelForm({...delForm, [event.target.name]: event.target.value});
-    };
+    // const delChangeHandler = event => {
+    //     console.log(event.target.value);
+    //     setDelForm({...delForm, [event.target.name]: event.target.value});
+    // };
     
     //add new member submit form
     const submitForm = event => {
@@ -30,17 +30,17 @@ const MemberForm = props => {
     };
 
     //delete new member form
-    const delSubmitForm = event => {
-        event.preventDefault();
-        const delMem = {
-            ...delForm,
-            id: Date.now()
-        }
-    props.delNewMem(delMem);
-    setDelForm({name: null, email: null, role: null});
-    };
+    // const delSubmitForm = event => {
+    //     event.preventDefault();
+    //     const delMem = {
+    //         ...delForm,
+    //         id: Date.now()
+    //     }
+    // props.delNewMem(delMem);
+    // setDelForm({name: null, email: null, role: null});
+    // };
     return (
-        <form onSubmit={submitForm} onSubmit={delSubmitForm}>
+        <form onSubmit={submitForm}>
             <label htmlFor="name">Name:</label>
             <input
                 type="text"
@@ -48,7 +48,7 @@ const MemberForm = props => {
                 placeholder="Name"
                 value={form.name}
                 onChange={changeHandler}
-                onChange={delChangeHandler}
+                // onChange={delChangeHandler}
                 />
             <label htmlFor="email">Email:</label>
             <input 
@@ -56,7 +56,7 @@ const MemberForm = props => {
                 placeholder="Email"
                 value={form.email}
                 onChange={changeHandler}
-                onChange={delChangeHandler}
+                // onChange={delChangeHandler}
             />
             <label htmlFor="role">Role:</label>
             <input
@@ -65,7 +65,7 @@ const MemberForm = props => {
                 placeholder="Role"
                 value={form.role}
                 onChange={changeHandler}
-                onChange={delChangeHandler}
+                // onChange={delChangeHandler}
                 />
             <button type="submit">Add Team Member</button>
             <button type="reset">Remove Team Member</button>
