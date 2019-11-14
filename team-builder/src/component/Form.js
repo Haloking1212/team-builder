@@ -27,13 +27,15 @@ function Form(props) {
             onChange={changeHandler}/>
             <label htmlFor="email">Email:</label>
             <input 
-            type="text" 
+            type="text"
+            name="email"
             placeholder="Email"
             value={form.email}
             onChange={changeHandler}/>
             <label htmlFor="role">Role:</label>
             <input 
-            type="text" 
+            type="text"
+            name="role"
             placeholder="Role"
             value={form.role}
             onChange={changeHandler}/>
