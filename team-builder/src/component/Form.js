@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Form() {
-    const [form, setForm] = useState({name:"", email:"", role:"",})
+function Form(props) {
+    const [form, setForm] = useState({name: "", email: "", role: ""})
 
     const changeHandler = event => {
         setForm({...form, [event.target.name]: event.target.value})
@@ -13,29 +13,29 @@ function Form() {
             ...form,
             id:Date.now()
         }
-        Props.addNewMem(newMem);
+        props.addNewMem(newMem);
         setForm({name: "", email: "", role: ""});
     }
     return (
         <form onSubmit={submitForm}>
-            <label hmtlFor="name">name:</label>
+            <label hmtlFor="name">Name:</label>
             <input 
             type="text" 
-            placeholder="name"
+            placeholder="Name"
             name="name"
             value={form.name}
             onChange={changeHandler}/>
             <label htmlFor="email">Email:</label>
             <input 
             type="text" 
-            placeholder="email"
+            placeholder="Email"
             value={form.email}
             onChange={changeHandler}/>
             <label htmlFor="role">Role:</label>
             <input 
             type="text" 
-            placeholder="role"
-            value={form.name}
+            placeholder="Role"
+            value={form.role}
             onChange={changeHandler}/>
             <button type="submit">Submit</button>
         </form>
